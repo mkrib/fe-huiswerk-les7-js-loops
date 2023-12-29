@@ -95,18 +95,18 @@ const NOVIEmployees = [
 //   { firstName: 'Mark', lastName: 'Rensen', email: 'Mark.Rensen@novi.nl' },
 //  ];
 // ==========================================
-
-
-
-
-
+for (let i = 0; i < NOVIEmployees.length; i++) {
+    NOVIEmployees[i].email = (`${NOVIEmployees[i].firstName}.${NOVIEmployees[i].lastName}@novi.nl`);
+}
+console.log(NOVIEmployees);
 
 // Opdracht 2-BONUS
 // Lukt het je om ervoor te zorgen dat alle e-mailadressen in lowercase letters komen te staan? Dit heb je nog niet geleerd, maar google is your best friend...
 // ==========================================
 
-
-
+for (let i = 0; i < NOVIEmployees.length; i++) {
+    console.log(NOVIEmployees[i].email.toLowerCase());
+}
 
 // ==========================================
 // Opdracht 3
@@ -152,5 +152,37 @@ const students = [
 // ]
 // ==========================================
 
+// 	3513 = Pijlsweerd
+//  3514 = Vogelenbuurt
+//  3512 = Binnenstad
+//  3531 = Lombok
+//  3572 = Wittevrouwen
+//  3581 = Oudwijk
+//  3583 = Schildersbuurt
 
+for (let i = 0; i < students.length; i++) {
+    if (students[i].zipCode === "3513") {
+        students[i].neighborhood = "Pijlsweerd";
+    }
+    else if (students[i].zipCode === "3514") {
+        students[i].neighborhood = "Vogelenbuurt";
+    }
+    else if (students[i].zipCode === "3512") {
+        students[i].neighborhood = "Binnenstad";
+    }
+    else if (students[i].zipCode === "3531") {
+        students[i].neighborhood = "Lombok";
+    }
+    else if (students[i].zipCode === "3572") {
+        students[i].neighborhood = "Wittevrouwen";
+    }
+    else if (students[i].zipCode === "3581") {
+        students[i].neighborhood = "Oudwijk";
+    }
+    else if (students[i].zipCode === "3583") {
+        students[i].neighborhood = "Schildersbuurt";
+    }
+}
+
+console.log(students);
 
